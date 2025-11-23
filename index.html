@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Music Malawi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+      :root {
+        /* Dark Theme (Default) */
+        --bg-app: #0a0e17;
+        --bg-sidebar: #0f1522;
+        --bg-header: rgba(10, 14, 23, 0.9);
+        --bg-card: #182032;
+        --bg-card-hover: #232d42;
+        --bg-modal: #1e293b;
+        --bg-input: #0f1522;
+        --text-base: #ffffff;
+        --text-muted: #9ca3af;
+        --border-color: #1e293b;
+      }
+
+      .light-mode {
+        /* Light Theme */
+        --bg-app: #f1f5f9;
+        --bg-sidebar: #ffffff;
+        --bg-header: rgba(255, 255, 255, 0.9);
+        --bg-card: #ffffff;
+        --bg-card-hover: #f8fafc;
+        --bg-modal: #ffffff;
+        --bg-input: #f1f5f9;
+        --text-base: #0f172a;
+        --text-muted: #64748b;
+        --border-color: #e2e8f0;
+      }
+
+      body {
+        background-color: var(--bg-app);
+        color: var(--text-base);
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--bg-app); }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+      
+      /* Range Input Reset */
+      input[type=range] {
+        -webkit-appearance: none;
+        background: transparent;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+      input[type=range]:focus {
+        outline: none;
+      }
+      
+      .theme-transition {
+        transition: all 0.3s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
